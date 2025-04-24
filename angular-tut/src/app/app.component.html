@@ -1,6 +1,9 @@
-<!-- <h1>Angular Components</h1>
-<login></login>
-<app-signup></app-signup>
-<app-profile></app-profile> -->
-
-<button (click)="sum(2,3)">Click Me</button>
+<h1>Counter App</h1>
+<div style="text-align: center;">
+    <h2 class="count">{{count}}</h2>
+    <div>
+        <button (click)="handleCounter('minus')" class="btn bg-red">Decrement</button>
+        <button (click)="handleCounter('reset')" class="btn bg-black">Reset</button>
+        <button (click)="handleCounter('plus')" class="btn bg-green ">Increment</button>
+    </div>
+</div>

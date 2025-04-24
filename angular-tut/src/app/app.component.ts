@@ -12,16 +12,28 @@ import { ProfileComponent } from './profile/profile.component';
 })
 
 export class AppComponent {
-  name: string = "Alice"
-  data: string | number = "Hello"
-  other = true
+  count = 0;
 
-  updateName() {
-    this.name = "Bruno"
-    this.data = 60
+  // handleIncrement() {
+  //   this.count = this.count + 1;
+  // }
+
+  // handleDecrement() {
+  //   this.count = this.count - 1;
+  // }
+
+  // handleReset() {
+  //   this.count = 0;
+  // }
+  
+  handleCounter(val: string) {
+    if(val == 'minus') {
+      this.count = this.count - 1;
+    } else if (val == 'plus') {
+      this.count = this.count + 1;
+    } else {
+      this.count = 0
+    }
   }
 
-  sum(a: number, b: number) {
-    console.log(a + b);
-  }
 }
