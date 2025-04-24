@@ -12,14 +12,16 @@ import { ProfileComponent } from './profile/profile.component';
 })
 
 export class AppComponent {
-  handleClickEvent() {
-    console.log("Function Called")
+  name: string = "Alice"
+  data: string | number = "Hello"
+  other = true
 
-    // calling difrrent function
-    this.otherFunction()
+  updateName() {
+    this.name = "Bruno"
+    this.data = 60
   }
 
-  otherFunction() {
-    console.log("other function");
+  sum(a: number, b: number) {
+    console.log(a + b);
   }
 }
