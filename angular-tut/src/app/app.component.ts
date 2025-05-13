@@ -10,4 +10,10 @@ import { HeaderComponent } from './components/header/header.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {}
+
+export class AppComponent {
+  handleEvent(event:MouseEvent) {
+    // console.log("Function called Click", (event.target as Element).className); 
+    console.log("Function is called!", event);
+  }
+}
