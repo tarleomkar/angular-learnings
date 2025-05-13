@@ -1,12 +1,12 @@
-import { Component, Input, Signal } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-greeting',
   standalone: true,
   imports: [],
   templateUrl: './greeting.component.html',
-  styleUrls: ['./greeting.component.css']
+  styleUrl: './greeting.component.scss',
 })
 export class GreetingComponent {
-  @Input() message!: Signal<string>;
+  message = input('Hello hello!');
 }
