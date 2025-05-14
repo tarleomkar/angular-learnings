@@ -12,8 +12,9 @@ import { HeaderComponent } from './components/header/header.component';
 })
 
 export class AppComponent {
-  name=""
+  name="";
   displayName = "";
+  email="";
 
   getName(event:Event) {
     this.name = (event.target as HTMLInputElement).value
@@ -25,5 +26,14 @@ export class AppComponent {
 
     setName() {
       this.name = "Sam"
+    }
+
+    getEmail(val:string) {
+      console.log(val);
+      this.email = val;
+    }
+
+    setEmail() {
+      this.email = "default@test.com"
     }
   }
