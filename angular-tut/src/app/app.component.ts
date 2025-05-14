@@ -13,7 +13,13 @@ import { HeaderComponent } from './components/header/header.component';
 
 export class AppComponent {
   name=""
+  displayName = "";
+
   getName(event:Event) {
     this.name = (event.target as HTMLInputElement).value
   }
-}
+
+  showName() {
+      this.displayName = this.name;
+    }
+  }
