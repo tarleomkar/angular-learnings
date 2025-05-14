@@ -6,9 +6,10 @@ import { HeaderComponent } from './components/header/header.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HomeComponent, HeaderComponent],
+  imports: [],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // styleUrls: ['./app.component.css']
+  styles:['h2{background-color: pink}']
 })
 
 export class AppComponent {
