@@ -22,4 +22,8 @@ export class AppComponent {
   showName() {
       this.displayName = this.name;
     }
+
+    setName() {
+      this.name = "Sam"
+    }
   }

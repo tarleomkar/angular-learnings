@@ -1,6 +1,8 @@
 <h1>Get and Set Input filed value</h1>
 <h1>User Name is: {{displayName}}</h1>
-<input type="text" (input)="getName($event)" placeholder="Enter User name">
+<input type="text" value="{{name}}" (input)="getName($event)" placeholder="Enter User name">
 <br>
 <br>
 <button (click)="showName()">Get Value</button>
+<button (click)="setName()">Set Name</button>
+<hr>
