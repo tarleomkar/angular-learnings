@@ -12,9 +12,8 @@ import { HeaderComponent } from './components/header/header.component';
 })
 
 export class AppComponent {
-  handleEvent(event:Event) {
-    // console.log("Function called Click", (event.target as Element).className); 
-    console.log("Function is called!", event.type);
-    console.log("Value", (event.target as HTMLInputElement).value);
+  name=""
+  getName(event:Event) {
+    this.name = (event.target as HTMLInputElement).value
   }
 }

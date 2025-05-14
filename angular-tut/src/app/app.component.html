@@ -1,23 +1,6 @@
-<h1>Event in Angular</h1>
-<button class="btn" name="login" (click)="handleEvent($event)">Click Event</button>
-
+<h1>Get and Set Input filed value</h1>
+<h1>User Name is: {{name}}</h1>
+<input type="text" (input)="getName($event)" placeholder="Enter User name">
 <br>
 <br>
-<div 
-(mouseenter)="handleEvent($event)"
-style="background-color: green; width: 100px; height: 100px;">
-</div>
-
-<div 
-(mouseleave)="handleEvent($event)"
-style="background-color: rgb(56, 40, 176); width: 100px; height: 100px;">
-</div>
-
-<br>
-<br>
-<input type="text"
-(focus)="handleEvent($event)"
-(blur)="handleEvent($event)"
-
-(input)="handleEvent($event)"
-name="user">
+<button>Get Value</button>
