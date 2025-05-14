@@ -14,6 +14,7 @@ import { HeaderComponent } from './components/header/header.component';
 export class AppComponent {
   display = true;
   x = 20;
+  toggleDiv = true
 
   hide() {
     this.display = false
@@ -21,5 +22,13 @@ export class AppComponent {
 
   show() {
     this.display = true
+  }
+
+  toggle() {
+    this.display = !this.display
+  }
+
+  toggleTwo() {
+    this.toggleDiv = !this.toggleDiv
   }
 }
