@@ -12,14 +12,18 @@ import { HeaderComponent } from './components/header/header.component';
 })
 
 export class AppComponent {
-  color = 'blue';
+  users = ["Anil", "Sam", "John", "Jane", "Alice", "Bob"];
 
-  handleColor(val: string) {
-    this.color = val
+  students = [
+    { name: "Anil", age: 20, city: "New York" },
+    { name: "Sam", age: 22, city: "Los Angeles" },
+    { name: "John", age: 21, city: "Chicago" },
+    { name: "Jane", age: 23, city: "Houston" },
+    { name: "Alice", age: 19, city: "Phoenix" },
+    { name: "Bob", age: 24, city: "Philadelphia" }
+  ];
+
+  getName(name:string) {
+    console.log(name);
   }
-
-  changeColor(event: Event) {
-    this.color = (event.target as HTMLInputElement).value;
-  }
-
 }
