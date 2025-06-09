@@ -12,23 +12,15 @@ import { HeaderComponent } from './components/header/header.component';
 })
 
 export class AppComponent {
-  display = true;
-  x = 20;
-  toggleDiv = true
+  color = 2;
 
-  hide() {
-    this.display = false
+  handleColor(value: number) {
+    this.color = value;
   }
 
-  show() {
-    this.display = true
-  }
-
-  toggle() {
-    this.display = !this.display
-  }
-
-  toggleTwo() {
-    this.toggleDiv = !this.toggleDiv
+  handleInput(event: Event) {
+    console.log(parseInt((event.target as HTMLInputElement).value));
+    
+    this.color = parseInt((event.target as HTMLInputElement).value);
   }
 }
