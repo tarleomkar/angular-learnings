@@ -12,15 +12,14 @@ import { HeaderComponent } from './components/header/header.component';
 })
 
 export class AppComponent {
-  color = 2;
+  color = 'blue';
 
-  handleColor(value: number) {
-    this.color = value;
+  handleColor(val: string) {
+    this.color = val
   }
 
-  handleInput(event: Event) {
-    console.log(parseInt((event.target as HTMLInputElement).value));
-    
-    this.color = parseInt((event.target as HTMLInputElement).value);
+  changeColor(event: Event) {
+    this.color = (event.target as HTMLInputElement).value;
   }
+
 }
